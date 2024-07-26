@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f8ff;
@@ -27,10 +27,10 @@ label {
     color: #4a90e2;
 }
 
-/* Adjusted input size */
+
 input {
-    width: 90%; /* Slightly smaller width */
-    padding: 8px; /* Reduced padding */
+    width: 90%; 
+    padding: 8px; 
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -70,18 +70,18 @@ button:hover {
 }
 
 .error {
-    color: #d9534f; /* Red color for error messages */
+    color: #d9534f; 
     font-weight: bold;
 }
 
-/* Adjusted footer size */
+
 footer {
     text-align: center;
-    padding: 5px; /* Reduced padding */
+    padding: 5px; 
     background-color: #4a90e2;
     color: white;
     position: fixed;
     bottom: 0;
     width: 100%;
-    font-size: 12px; /* Reduced font size */
+    font-size: 12px; 
 }
