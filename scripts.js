@@ -109,7 +109,7 @@ function showDetailedInfo() {
         });
         detailedText += "</ul><h3>Increase Percentage:</h3><ul>";
 
-        // Increase percentage section
+        // Increase percentage section-1
         let nextPercentage = Math.ceil(currentPercentage / 5) * 5;
         while (nextPercentage <= 95) {
             let totalClassesNeeded = totalClassesSoFar;
