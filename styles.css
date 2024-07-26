@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #4a90e2;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #4a90e2;
+}
+
+/* Adjusted input size */
+input {
+    width: 90%; /* Slightly smaller width */
+    padding: 8px; /* Reduced padding */
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 93%;
+    padding: 8px;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e7f4f8;
+    border: 1px solid #b3d9f7;
+    border-radius: 4px;
+}
+
+.detailed-info {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.error {
+    color: #d9534f; /* Red color for error messages */
+    font-weight: bold;
+}
+
+/* Adjusted footer size */
+footer {
+    text-align: center;
+    padding: 5px; /* Reduced padding */
+    background-color: #4a90e2;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px; /* Reduced font size */
+}

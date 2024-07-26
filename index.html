@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attendance Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Attendance Calculator</h1>
+      <label for="totalClasses">Enter the total number of classes:</label>
+      <input type="number" id="totalClasses" required />
+      <br />
+      <label for="classesAttended">Enter the number of classes attended:</label>
+      <input type="number" id="classesAttended" required />
+      <br />
+      <button onclick="calculateAttendance()">Calculate</button>
+      <button
+        id="detailedInfoButton"
+        onclick="showDetailedInfo()"
+        style="display: none"
+      >
+        Click for Detailed Info
+      </button>
+      <button id="showLessButton" onclick="showLess()" style="display: none">
+        Show Less
+      </button>
+      <div class="result" id="result"></div>
+      <div class="detailed-info" id="detailedInfo"></div>
+    </div>
+    <footer>
+      <p>&copy; 2024 All Rights Reserved | TEAM KANYA RASHI</p>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
