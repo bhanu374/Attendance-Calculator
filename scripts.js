@@ -1,5 +1,5 @@
 function calculateAttendance() {
-    // Retrieve input values
+    
     const totalClassesSoFar = parseInt(
         document.getElementById("totalClasses").value,
         10
@@ -10,7 +10,6 @@ function calculateAttendance() {
     );
     const desiredAttendancePercentage = 75.0;
 
-    // Validation checks
     if (isNaN(totalClassesSoFar) || isNaN(classesAttended)) {
         document.getElementById("result").innerHTML =
             "<span class='error'>Please enter valid numbers for both fields.</span>";
@@ -27,21 +26,20 @@ function calculateAttendance() {
         return;
     }
 
-    // Calculate current attendance percentage
+    
     const currentAttendancePercentage =
         (classesAttended / totalClassesSoFar) * 100;
 
-    // Calculate number of classes missed
+   
     const classesMissed = totalClassesSoFar - classesAttended;
 
-    // Display results
+    
     let resultText = `Number of classes missed: ${classesMissed}<br>`;
     resultText += `Current attendance is ${currentAttendancePercentage.toFixed(
         2
     )}%.<br>`;
 
     if (currentAttendancePercentage >= desiredAttendancePercentage) {
-        // Calculate the maximum number of classes that can be missed
         const maxTotalClasses =
             classesAttended / (desiredAttendancePercentage / 100.0);
         const maxClassesPossible = Math.floor(maxTotalClasses);
@@ -68,11 +66,9 @@ function calculateAttendance() {
 
     document.getElementById("result").innerHTML = resultText;
 
-    // Show the detailed info button and hide the show less button
     document.getElementById("detailedInfoButton").style.display = "block";
     document.getElementById("showLessButton").style.display = "none";
 
-    // Hide the detailed info section
     document.getElementById("detailedInfo").style.display = "none";
 }
 
@@ -148,20 +144,17 @@ function showDetailedInfo() {
     detailedText += "</ul>";
     document.getElementById("detailedInfo").innerHTML = detailedText;
 
-    // Show the detailed info section and hide the detailed info button
     document.getElementById("detailedInfo").style.display = "block";
     document.getElementById("detailedInfoButton").style.display = "none";
     document.getElementById("showLessButton").style.display = "block";
 }
 
 function showLess() {
-    // Hide the detailed info section and show the detailed info button
     document.getElementById("detailedInfo").style.display = "none";
     document.getElementById("detailedInfoButton").style.display = "block";
     document.getElementById("showLessButton").style.display = "none";
 }
 
-// Add event listeners to input fields
 document
     .getElementById("totalClasses")
     .addEventListener("keypress", function (event) {
